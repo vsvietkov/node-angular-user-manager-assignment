@@ -9,9 +9,7 @@
     "test:all": "npx nx run-many --target=test",
     "test:client": "npx nx test client",
     "test:server": "npx nx test server",
-    "lint:all": "npx nx run-many --target=lint",
-    "lint:client": "npx nx lint client",
-    "lint:server": "npx nx lint server"
+    "lint": "npx nx run-many --target=lint"
   },
   "private": true,
   "devDependencies": {
@@ -71,6 +69,7 @@
     "@angular/router": "~17.3.0",
     "@nestjs/common": "^10.0.2",
     "@nestjs/core": "^10.0.2",
+    "@nestjs/mapped-types": "^2.0.5",
     "@nestjs/platform-express": "^10.0.2",
     "axios": "^1.6.0",
     "reflect-metadata": "^0.1.13",
