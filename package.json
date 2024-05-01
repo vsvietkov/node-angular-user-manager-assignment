@@ -3,9 +3,15 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "start": "npx nx run-many --target=serve",
+    "start:client": "npx nx serve client",
+    "start:server": "npx nx serve server",
     "test:all": "npx nx run-many --target=test",
     "test:client": "npx nx test client",
-    "test:server": "npx nx test server"
+    "test:server": "npx nx test server",
+    "lint:all": "npx nx run-many --target=lint",
+    "lint:client": "npx nx lint client",
+    "lint:server": "npx nx lint server"
   },
   "private": true,
   "devDependencies": {
