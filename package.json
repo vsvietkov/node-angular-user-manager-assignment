@@ -2,7 +2,11 @@
   "name": "@node-angular-user-manager-assignment/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "test:all": "npx nx run-many --target=test",
+    "test:client": "npx nx test client",
+    "test:server": "npx nx test server"
+  },
   "private": true,
   "devDependencies": {
     "@angular-devkit/build-angular": "~17.3.0",
